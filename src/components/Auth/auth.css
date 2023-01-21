@@ -1,0 +1,104 @@
+.auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4) url("../../images/auth-bg-4.png");
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+}
+
+.auth_bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100vh;
+    overflow: hidden;
+} 
+
+.auth_bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* transform: rotate(-20deg) translateX(-60px) scale(1.4, 1.4) translateY(-6px); */
+}
+
+.auth_input_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    margin-left: 4rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.auth_input_container h2 {
+    font-size: 2rem;
+    color: #17171f;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.auth_input_container p {
+    margin: 0.5rem 0;
+}
+
+.auth_input_container p span {
+    color: #4169e1;
+    cursor: pointer;
+}
+
+.auth_input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.auth_input h3 {
+    font-size: 1rem;
+    margin: 0;
+    color: #17171f;
+    margin-bottom: 0.5rem;
+}
+
+.auth_input input {
+   font-family: "Lato", sans-serif;
+    width: 100%;
+    padding: 1rem 0.7rem;
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+    font-size: 1rem;
+    /* box-shadow: 0 0 3px rgb(0, 0, 0); */
+    border: 2px solid #e6e6eb;
+}
+
+.auth_input input:focus{
+    border-bottom: 2px solid #4169e1;
+}
+
+.auth_input_container button {
+    background-color: #4169e1;
+    cursor: pointer;
+   font-family: "Lato", sans-serif;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+}
