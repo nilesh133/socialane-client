@@ -15,7 +15,7 @@ import { v4 } from "uuid";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 import "./userprofile.css"
-import { BiEditAlt } from 'react-icons/bi'
+import { FiEdit2 } from 'react-icons/fi'
 import { Helmet } from 'react-helmet'
 
 const Userprofile = () => {
@@ -121,7 +121,7 @@ const Userprofile = () => {
             <div className='profile_details_container'>
                 <div className='profile_details'>
                     <div className='profile_details_left'>
-                        <span onClick={() => handleOpenModal('profilePhotoUrl')}><BiEditAlt /></span>
+                        <span onClick={() => handleOpenModal('profilePhotoUrl')}><FiEdit2 /></span>
                         <div className='profile_details_left_profilepic'>
                             <Modal
                                 hideBackdrop
@@ -168,7 +168,7 @@ const Userprofile = () => {
                         </div>
                     </div>
                     <div className='profile_details_right'>
-                        <span onClick={() => handleOpenModal('profileabout')}><BiEditAlt /></span>
+                        <span onClick={() => handleOpenModal('profileabout')}><FiEdit2 /></span>
                         <Modal
                             hideBackdrop
                             open={openModal === "profileabout"}
